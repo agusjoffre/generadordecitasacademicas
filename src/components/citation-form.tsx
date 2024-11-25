@@ -32,23 +32,24 @@ const CitationForm = () => {
   return (
     <Card className="w-full">
       <CardHeader>
-        <CardTitle>Generate citation</CardTitle>
+        <CardTitle>Generador de citas academicas</CardTitle>
         <CardDescription>
-          Fill the form with the information of the book you want to cite
+          Llena el siguiente formulario para generar una cita academica en APA,
+          MLA o Chicago
         </CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
         <CardContent className="grid gap-4 py-4">
           <Label className="flex flex-col gap-2">
-            <span>Name of the author</span>
+            <span>Nombre del autor</span>
             <Input placeholder="Jorge Luis" name="nameAuthor" required />
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Last name of the author</span>
+            <span>Apellido del autor</span>
             <Input placeholder="Borges" name="lastNameAuthor" required />
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Title</span>
+            <span>Titulo del texto</span>
             <Input
               className="w-full"
               placeholder="Historia Universal de la Infamia"
@@ -57,7 +58,7 @@ const CitationForm = () => {
             />
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Year of publication</span>
+            <span>Año de publicacion</span>
             <Input
               className="w-full"
               placeholder="1998"
@@ -67,7 +68,7 @@ const CitationForm = () => {
             />
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Publisher</span>
+            <span>Editorial</span>
             <Input
               className="w-full"
               placeholder="Alianza Editorial"
@@ -76,28 +77,28 @@ const CitationForm = () => {
             />
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Page from:</span>
+            <span>Desde la pagina:</span>
             <Input
               className="w-full"
               placeholder="17"
               name="pageFrom"
               type="number"
             />
-            <pre className="text-xs text-destructive">Optional</pre>
+            <pre className="text-xs text-destructive">Opcional</pre>
           </Label>
           <Label className="flex flex-col gap-2">
-            <span>Page to:</span>
+            <span>Hasta la pagina:</span>
             <Input
               className="w-full"
               placeholder="25"
               name="pageTo"
               type="number"
             />
-            <pre className="text-xs text-destructive">Optional</pre>
+            <pre className="text-xs text-destructive">Opcional</pre>
           </Label>
         </CardContent>
         <CardFooter>
-          <Button type="submit">Generate</Button>
+          <Button type="submit">Generar cita</Button>
         </CardFooter>
       </form>
     </Card>
