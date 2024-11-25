@@ -98,7 +98,9 @@ const CitationForm = () => {
           </Label>
         </CardContent>
         <CardFooter>
-          <Button type="submit">Generar cita</Button>
+          <Button type="submit" variant={"accent"}>
+            Generar cita
+          </Button>
         </CardFooter>
       </form>
     </Card>
